@@ -1,5 +1,7 @@
 from typing import Dict
 
+from six import text_type
+
 from PIL import Image
 from aldryn_forms.models import FormPlugin
 from cms.plugin_base import CMSPluginBase
@@ -11,7 +13,6 @@ from django.core.validators import MinLengthValidator
 from django.db.models import query
 from django.template.loader import select_template
 from django.utils.safestring import mark_safe
-from django.utils.six import text_type
 from django.utils.translation import ugettext
 from django.utils.translation import ugettext_lazy as _
 from emailit.api import send_mail

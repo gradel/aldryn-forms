@@ -4,9 +4,9 @@ from email.utils import formataddr
 from django.contrib import admin
 from django.template.loader import render_to_string
 from django.urls import reverse
-from django.utils import six
 from django.utils.translation import ugettext_lazy as _
 
+import six
 
 if six.PY2:
     str_dunder_method = '__unicode__'
