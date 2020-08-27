@@ -5,7 +5,6 @@ from functools import partial
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext
 from django.utils.translation import ugettext_lazy as _
 
@@ -53,7 +52,6 @@ class EmailNotificationFormPlugin(FormPlugin):
         return choices
 
 
-@python_2_unicode_compatible
 class EmailNotification(models.Model):
 
     class Meta:
